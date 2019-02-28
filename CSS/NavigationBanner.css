@@ -1,0 +1,175 @@
+body, html {font-family: "Lato", sans-serif;
+            height: 100%;
+            margin: 0;
+      }
+
+.banner
+{
+  background-image: url("../Images/banner.jpg");
+  min-height: 380px;
+
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.centerImg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -10;
+}
+
+.container {
+  width: 100%;
+  position: sticky;
+  top:0;
+
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: transparent;
+}
+
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  position: relative;
+}
+
+.topnav a:after {
+  content: '';
+  position: absolute;
+  width: 0; height: 3px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #fff;
+  transition: width .5s ease;
+  -webkit-transition: width .5s ease;
+}
+
+.topnav a:hover:after{
+  width: 57%;
+  left: 20%;
+  background: #fff;
+}
+
+.topnav a.active:after {
+  width: 57%;
+  left: 20%;
+  background: #fff;
+}
+
+
+.welcomeEffect{
+  position: absolute;
+  top: 90%;
+  left: 33%;
+  margin-right: -50%;
+
+  position: absolute;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 2em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+
+#goup{
+  position: fixed;
+  bottom: 5;
+  margin-left: 1490;
+}
+
+
+
+/* The overlay effect with black background */
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9); /* Black with a little bit see-through */
+}
+
+/* The content */
+.overlay-content {
+  position: relative;
+  top: 46%;
+  width: 80%;
+  text-align: center;
+  margin-top: 30px;
+  margin: auto;
+}
+
+/* Close button */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  cursor: pointer;
+  color: white;
+}
+
+.overlay .closebtn:hover {
+  color: #ccc;
+}
+
+/* Style the search field */
+.overlay input[type=text] {
+  padding: 15px;
+  font-size: 17px;
+  border: none;
+  float: left;
+  width: 80%;
+  background: white;
+}
+
+.overlay input[type=text]:hover {
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+.overlay button {
+  float: left;
+  width: 20%;
+  padding: 15px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.overlay button:hover {
+  background: #bbb;
+}
