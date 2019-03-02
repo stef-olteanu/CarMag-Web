@@ -1,0 +1,16 @@
+*{
+  box-sizing: border-box;
+}
+
+.img-product{
+  width: 400;
+  height: auto;
+  margin-bottom: 60;
+  position:inherit;
+
+}
+
+@media screen and (max-width: 400px){
+  .img-product{
+    width: 100%;
+  }
