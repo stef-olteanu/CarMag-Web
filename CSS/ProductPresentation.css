@@ -4,9 +4,8 @@
 
 .img-product{
   width: 400;
-  height: auto;
-  margin-bottom: 60;
-  position:inherit;
+  height: 300;
+  position:absolute;
 
 }
 
