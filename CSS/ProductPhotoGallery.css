@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+.columnGallery{
+  float: left;
+  width: 23%;
+  padding: 6px;
+}
+
+.columnGallery img {
+  opacity: 0.8;
+  cursor:pointer;
+}
+
+.columnGallery img:hover{
+  opacity: 1;
+}
+
+.rowGallery{
+    margin-left: 30px;
+      margin-top: 10px;
+}
+
+.rowGallery:after{
+  content: "";
+  display: table;
+  clear: both;
+
+}
+
+.containerGallery{
+  position: relative;
+  display: block;
+  width: 90%;
+  height: 30%;
+  margin: 30px;
+}
+
+.columnPresent {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.rowPresent:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.title{
+  text-align: center;
+}
+
+
+.blockButton {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #2c2c2c;
+  color: white;
+  padding: 12px 26px;
+  font-size: 25px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.blockButton:hover {
+  opacity: 0.7;
+}
+
+.centerIt{
+  margin-left: 37%;
+  margin-top: 10;
+  margin-bottom: 10;
+  display: inline-block;
+}
+
+.fa {
+  font-size: 30px;
+  padding: 30px;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #2c2c2c;
+  color: white;
+  vertical-align: middle;
+}
+
+.fa-linkedin {
+  background: #2c2c2c;
+  color: white;
+  font-size: 20;
+  vertical-align: middle;
+}
+
+.fa-instagram {
+  background: #2c2c2c;
+  color: white;
+  vertical-align: middle;
+}

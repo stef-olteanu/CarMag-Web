@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Product Name</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="../Images/logo.png">
+    <link href="../CSS/ProductNavi.css" rel="stylesheet" type="text/css">
+    <link href="../CSS/ProductPhotoGallery.css" rel="stylesheet" type="text/css">
+    <script src="../JavaScript/PhotoGallery.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <div class="container">
+    <div class="topnav">
+      <a href="../index.html">Home</a>
+      <a href="#news">Autoturisme</a>
+      <a href="#descriere">Despre</a>
+      <a href="#about">Contact</a>
+
+      <a href="#button" class='fas fa-shopping-cart' style="float:right"></a>
+      <a href="loginPage.html" class="far fa-user"   style="float:right"></a>
+      <a href="#button" class="fa fa-search"  style="float:right; color:black"></a>
+    </div>
+  </div>
+
+  <a href="../index.html" target="_self">
+    <img class="centerImg" src="../Images/logo.png" />
+  </a>
+
+
+  <hr/>
+
+  <a href="../index.html">Home</a>
+  <a class="path">>></a>
+  <a href="#Autoturisme">Autoturisme</a>
+  <a class="path">>></a>
+  <a href="prodPage.html">Denumire Produs</a>
+
+  <!-- The grid: four columns -->
+  <div class="rowPresent">
+    <div class="columnPresent">
+      <div class="rowGallery">
+        <div class="columnGallery">
+          <img src="../Images/ferrari/ferrari.jpg" style="width:100%" onclick="expandGallery(this);">
+        </div>
+        <div class="columnGallery">
+          <img src="../Images/ferrari/ferrariside.jpg" style="width:100%" onclick="expandGallery(this);">
+        </div>
+        <div class="columnGallery">
+          <img src="../Images/ferrari/ferrariback.jpg" style="width:100%" onclick="expandGallery(this);">
+        </div>
+        <div class="columnGallery">
+          <img src="../Images/ferrari/ferrariinterior.jpg" style="width:100%" onclick="expandGallery(this);">
+        </div>
+      </div>
+
+      <!-- The expanding image container -->
+      <div class="containerGallery">
+        <img src="../Images/ferrari/ferrari.jpg" id="expandedImg" style="width:100%">
+      </div>
+    </div>
+
+    <div class="columnPresent">
+      <h1 class="title">Ferrari 488 GTS Spider</h1>
+      <br>
+      <h3 class="title">249 900 euro</h3>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <p class="title">Disponibil</p>
+
+      <button class="blockButton">Cumpara</button>
+
+      <br>
+      <hr/>
+      <div class="centerIt">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+      </div>
+      <hr/>
+    </div>
+  </div>
+
+
+
+
+</html>
