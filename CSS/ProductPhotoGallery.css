@@ -1,3 +1,8 @@
+body, html {font-family: "Lato", sans-serif;
+            height: 100%;
+            margin: 0;
+      }
+
 * {
   box-sizing: border-box;
 }
@@ -49,6 +54,7 @@
   clear: both;
 }
 
+/*To align the title in the middle*/
 .title{
   text-align: center;
 }
@@ -77,6 +83,8 @@
   margin-bottom: 10;
   display: inline-block;
 }
+
+/*For the social media icons*/
 
 .fa {
   font-size: 30px;
@@ -112,3 +120,51 @@
   color: white;
   vertical-align: middle;
 }
+
+
+/*To create the arrow from the path*/
+
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+
+/*To customize hyperlink*/
+.linky:link {
+  color: black;
+}
+
+.linky:visited {
+  color: black;
+}
+
+.linky:hover {
+  color: gray;
+}
+
+.linky:active {
+  color: #c4c3c3;
+}
+
+
+/*Customize the detail table*/
+table {
+  border-collapse: collapse;
+  width: 50%;
+  margin-left: 25%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
