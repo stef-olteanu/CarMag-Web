@@ -1,0 +1,14 @@
+baza de date - pentru utilizatori produsele care se afla in cos
+
+
+
+To Do:
+
+-pagina de editare a detaliilor profilului
+
+
+Suplimentar:
+-pagina de cautare produs
+-pagina detalii contact
+-pagina adminsitrare conturi
+-pagina resetare a parolei

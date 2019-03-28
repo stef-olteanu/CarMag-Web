@@ -109,4 +109,231 @@ body, html
 .centerPath
 {
   margin-left: 46.5%;
+  top:auto;
+}
+
+
+/* Columns for listing products and filter*/
+.leftcolumn {
+  float:left;
+  width: 20%;
+  height: auto;
+}
+
+
+.rightcolumn{
+  float:left;
+  width: 80%;
+  height: auto;
+}
+
+.rowy{
+  margin-bottom: 100px;
+}
+
+
+.rowy::after{
+  content:"";
+  display: table;
+  clear: both;
+  height: auto;
+}
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 70%;
+    padding: 0;
+  }
+}
+
+
+/*slider*/
+
+.slidecontainer {
+  width: 75%;
+  margin-left: 20px;
+
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  margin-left: 20px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 1;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #323232;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #323232;
+  cursor: pointer;
+}
+
+
+
+/* Radio Button FILTER */
+
+
+input[type="checkbox"],
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+label {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 10px;
+  line-height: 36px;
+  cursor: pointer;
+}
+
+label::before {
+  content: " ";
+  position: absolute;
+  top: 6px;
+  left: 0;
+  display: block;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #323232;
+  border-radius: 4px;
+  z-index: -1;
+}
+input[type="radio"] + label::before {
+  border-radius: 18px;
+}
+/* Checked */
+input[type="checkbox"]:checked + label,
+input[type="radio"]:checked + label {
+  padding-left: 10px;
+  color: #ffffff;
+}
+input[type="checkbox"]:checked + label::before,
+input[type="radio"]:checked + label::before {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #323232;
+}
+/* Transition */
+label,
+label::before {
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+}
+
+
+
+/*Product GRID goes here */
+
+.column {
+  float: left;
+  width: 25%;
+  height: 25%;
+  padding: 0 10px;
+  margin-top:70px;
+  margin-right: 10px;
+  margin-left: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 70%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.img-prod{
+  float: left;
+  width: 90%;
+  height: auto;
+  padding: 0 10px;
+  margin-top: 30px;
+  position: inherit;
+  border-radius: 20px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .img-prod {
+    width: 70%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.containerProd {
+  position: relative;
+  width: 100%;
+}
+
+.numeProd{
+  margin-bottom: -12px;
+  text-align: center;
+}
+
+
+.reference{
+  position: absolute;
+  margin-bottom: 0px;
+}
+
+
+
+/*Pagination goes here*/
+
+.pagination{
+  padding: 30px 0;
+  margin-left: 48%;
+}
+
+.pagination ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.pagination a{
+  display: inline-block;
+  padding: 10px 18px;
+  color: #222;
+}
+
+.p2 .is-active li{
+  font-weight: bold;
+  border-bottom: 3px solid #323232;
 }

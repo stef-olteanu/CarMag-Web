@@ -1,0 +1,89 @@
+body, html {font-family: "Lato", sans-serif;
+            height: 100%;
+            margin: 0;
+            min-width: 75%;
+      }
+
+
+/*To customize hyperlink*/
+.linky:link {
+  color: black;
+}
+
+.linky:visited {
+  color: black;
+}
+
+.linky:hover {
+  color: gray;
+}
+
+.linky:active {
+  color: #c4c3c3;
+}
+
+
+/*To create the arrow from the path*/
+
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type=text]:focus {
+  border: 3px solid #555;
+}
+
+
+input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type=password]:focus {
+  border: 3px solid #555;
+}
+
+
+.column-middle{
+  margin-top: 5%;
+  margin-left: 14%;
+  margin-right: 14%;
+}
+
+.button5 {
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+}
+
+.button5:hover {
+  background-color: #555555;
+  color: white;
+}

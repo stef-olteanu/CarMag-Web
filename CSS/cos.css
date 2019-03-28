@@ -1,0 +1,100 @@
+body, html {font-family: "Lato", sans-serif;
+            height: 100%;
+            margin: 0;
+            min-width: 75%;
+      }
+
+
+/*To customize hyperlink*/
+.linky:link {
+  color: black;
+}
+
+.linky:visited {
+  color: black;
+}
+
+.linky:hover {
+  color: gray;
+}
+
+.linky:active {
+  color: #c4c3c3;
+}
+
+
+/*To create the arrow from the path*/
+
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+
+.column-middle{
+	margin-top: 5%;
+	margin-left: 14%;
+	margin-right: 14%;
+}
+
+table{
+	border-collapse:collapse;
+}
+
+
+th, td { 
+
+                text-align:center; 
+                padding:20px;
+              	
+            } 
+
+tr{
+	border-bottom: solid 1px black;
+}
+
+.cos-prod{
+	width: 100px;
+	height: 100px;
+}
+
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button5 {
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+}
+
+.button5:hover {
+  background-color: #555555;
+  color: white;
+}
+
+
+
+
+
+
+

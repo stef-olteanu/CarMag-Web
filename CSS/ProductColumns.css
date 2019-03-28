@@ -109,3 +109,39 @@
 .containerProduse:hover .button {
   opacity: 1;
 }
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.5s ease;
+}
+
+.containerProduse:hover .overlay {
+  display: block;
+  background-color: transparent;
+}
+
+
+
+.title {
+  position: absolute;
+  width: 500px;
+  left: -50;
+  top: 120px;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  z-index: 1;
+  transition: top .5s ease;
+}
+
+.containerProduse:hover .title {
+  top: 90px;
+}
