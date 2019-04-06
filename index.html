@@ -1,3 +1,7 @@
+<?php
+  session_start();
+?>
+
 <!<!DOCTYPE html>
 <html>
   <head>
@@ -7,9 +11,11 @@
     <link href="CSS/NavigationBanner.css" rel="stylesheet" type="text/css">
     <link href="CSS/ProductColumns.css" rel="stylesheet" type="text/css">
     <link href="CSS/ProductPresentation.css" rel="stylesheet" type="text/css">
+   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
-    <script type="text/javascript" src="JavaScript/fscreen.js"></script>
+    <script type="text/javascript" src="JavaScript/search.js"></script>
+     <link href="CSS/search.css" rel="stylesheet" type="text/css">
   </head>
 
 
@@ -22,11 +28,23 @@
         <a class="active" href="index.html">Home</a>
         <a href="Pages/listPage.html">Autoturisme</a>
         <a href="#descriere">Despre</a>
-        <a href="#about">Contact</a>
+        <a href="Pages/contact.html">Contact</a>
 
         <a href="Pages/cos.html" class='fas fa-shopping-cart' style="float:right"></a>
         <a href="Pages/loginPage.html" class="far fa-user"   style="float:right"></a>
-        <a href="#button" class="fa fa-search"  style="float:right; color:white"></a>
+        <a onclick="openSearch()" href="#button" class="fa fa-search"  style="float:right; color:white"></a>
+
+
+        <div id="myOverlay" class="overlaySearch">
+          <span class="closebtn" onclick="closeSearch()" title="Close Overlay">X</span>
+          <div class="overlay-content">
+            <form action="/action_page.php">
+              <input type="text" placeholder="Search.." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+        </div>
+
       </div>
     </div>
     <a href="index.html" target="_self">
@@ -44,7 +62,7 @@
     <br>
     intreaga afacere cu masini. Asadar, oferim auto pentru toate gusturile, chiar si pentru cei, sa
     <br>
-    zicem, mai pretentiosi. Pentru orice nelamurire nu ezita sa ne <a href="#Contact">contactezi</a>!
+    zicem, mai pretentiosi. Pentru orice nelamurire nu ezita sa ne <a href="Pages/contact.html">contactezi</a>!
     <br>
     <p style="font-style:italic">"The cars we drive say a lot about us."</p>
   </div>

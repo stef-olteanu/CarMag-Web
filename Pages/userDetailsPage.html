@@ -1,3 +1,7 @@
+<?php
+  session_start();
+?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -7,18 +11,32 @@
     <link href="../CSS/ProductNavi.css" rel="stylesheet" type="text/css">
     <link href="../CSS/detaliiCont.css" rel="stylesheet" type="text/css">
     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+
+    <script type="text/javascript" src="../JavaScript/search.js"></script>
+     <link href="../CSS/search.css" rel="stylesheet" type="text/css">
   </head>
 
   <div class="container">
     <div class="topnav">
       <a href="../index.html">Home</a>
       <a href="listPage.html">Autoturisme</a>
-      <a href="../index.html/#descriere">Despre</a>
-      <a href="#about">Contact</a>
+      <a href="../index.html#descriere">Despre</a>
+      <a href="contact.html">Contact</a>
 
       <a href="cos.html" class='fas fa-shopping-cart' style="float:right"></a>
       <a href="loginPage.html" class="far fa-user"   style="float:right"></a>
-      <a href="#button" class="fa fa-search"  style="float:right; color:black"></a>
+      <a onclick="openSearch()" href="#button" class="fa fa-search"  style="float:right; color:black"></a>
+
+
+        <div id="myOverlay" class="overlaySearch">
+          <span class="closebtn" onclick="closeSearch()" title="Close Overlay">X</span>
+          <div class="overlay-content">
+            <form action="/action_page.php">
+              <input type="text" placeholder="Search.." name="search">
+              <button type="submit"><a class="fa fa-search"></a></button>
+            </form>
+          </div>
+        </div>
     </div>
   </div>
 

@@ -23,13 +23,14 @@ html, body {
 }
 
 .form {
-  margin-top: -4.5em;
+  margin-top: -4.0em;
   transition: 1s ease-in-out;
 }
 
 .input {
   -moz-box-sizing: border-box;
        box-sizing: border-box;
+        box-sizing: border-box;
   font-size: 1.125rem;
   line-height: 3rem;
   width: 100%; height: 3rem;
@@ -106,6 +107,10 @@ html, body {
 }
 
 #toggle--login:checked ~ .form--signup { left:200%; visibility:hidden; }
+#toggle--login:checked ~ .form--reset { left:200%; visibility:hidden; }
 #toggle--signup:checked ~ .form--login { left:-100%; visibility:hidden; }
+#toggle--signup:checked ~ .form--reset { left:-100%; visibility:hidden; }
+#toggle--reset:checked ~ .form--login { left:-100%; visibility:hidden; }
+#toggle--reset:checked ~ .form--signup { left:200%; visibility:hidden; }
 
 @media (height:300px){.legal,.photo-cred{display:none}}
