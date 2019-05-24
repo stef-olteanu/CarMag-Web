@@ -28,7 +28,8 @@
 	 				echo("wrongpass");
 	 			}
 	 			elseif ($hashedPasscheck == true) {
-	 				echo("success");
+	 				echo("success/");
+	 				$_SESSION['u_id'] = $row['Id_Utilizator'];
 	 				$_SESSION['u_mail'] = $row['Mail'];
 	 				$_SESSION['u_nume'] = $row['Nume'];
 	 				$_SESSION['u_prenume'] = $row['Prenume'];
@@ -37,6 +38,14 @@
 	 				$_SESSION['u_judet'] = $row['Judet'];
 	 				$_SESSION['u_localitate'] = $row['Localitate'];
 	 				$_SESSION['u_adresa'] = $row['Adresa'];
+	 				$_SESSION['u_rank'] = $row['Rank'];
+	 				if(isset($_SESSION['last_page'])){
+	 					echo($_SESSION['last_page']);
+	 				}
+	 				else
+	 				{
+	 					echo("userDetailsPage.php");
+	 				}
 	 				exit();
 	 			}
 	 		}

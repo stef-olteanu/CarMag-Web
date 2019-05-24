@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<angajati>
+
+	<angajat concediu="da">
+	  <categorie>Civil</categorie>
+	  <nume>Pavel</nume>
+	  <prenume>Ion</prenume>
+	  <data_nasterii>
+		<zi>13</zi>
+		<luna>04</luna>
+		<an>1980</an>
+	  </data_nasterii>
+	  <an_angajare>2005</an_angajare>
+	  <departament>Logistica</departament>
+	</angajat>
+
+	<angajat concediu="nu">
+	  <categorie>Militar</categorie>
+	  <nume>Trandafir</nume>
+	  <prenume>Alina</prenume>
+	  <data_nasterii>
+		<zi>22</zi>
+		<luna>01</luna>
+		<an>1987</an>
+	  </data_nasterii>
+	  <an_angajare>2010</an_angajare>
+	  <departament>Personal</departament>
+	</angajat>
+	
+	<angajat concediu="nu">
+	  <categorie>Militar</categorie>
+	  <nume>Popescu</nume>
+	  <prenume>Mihai</prenume>
+	  <data_nasterii>
+		<zi>01</zi>
+		<luna>08</luna>
+		<an>1970</an>
+	  </data_nasterii>
+	  <an_angajare>1992</an_angajare>
+	  <departament>Financiar</departament>
+	</angajat>
+	
+	<angajat concediu="da">
+	  <categorie>Civil</categorie> 
+	  <nume>Manescu</nume>
+	  <prenume>Catalin</prenume>
+	  <data_nasterii>
+		<zi>14</zi>
+		<luna>12</luna>
+		<an>1990</an>
+	  </data_nasterii>
+	  <an_angajare>2014</an_angajare>
+	  <departament>Logistica</departament>
+	</angajat>
+	
+	<angajat concediu="nu">
+	  <categorie>Militar</categorie>
+	  <nume>Iliescu</nume>
+	  <prenume>Ramona</prenume>
+	  <data_nasterii>
+		<zi>10</zi>
+		<luna>06</luna>
+		<an>1984</an>
+	  </data_nasterii>
+	  <an_angajare>2007</an_angajare>
+	  <departament>Logistica</departament>
+	</angajat>
+		
+</angajati>
+

@@ -35,7 +35,7 @@ $servername = "localhost";
             <br/>
             Asigurati-va ca dupa ce va logati sa schimbati parola cu cea dorita!
             <br/>
-            Nu ati fost dvs? Semnalati problema la adresa de <a href=\"http://localhost/Pages/contact.html\">Contact</a>!";
+            Nu ati fost dvs? Semnalati problema la adresa de <a href=\"http://localhost/Pages/contact.php\">Contact</a>!";
 
             $result=mail("stfn_olteanu@yahoo.com","Recuperare parola",$subject,$headers);
             echo("success");
