@@ -50,7 +50,7 @@
     <label for="toggle--reset" class="text text--small text--centered">Forgot Password? <b>Click here</b></label>
   </form>
 
-  <form  class="form form--signup framed">
+  <form  class="form form--signup framed" autocomplete="off">
     <p id="info" style="color:red; visibility: hidden;"></p>
     <input id="mail" name="mail" type="text" placeholder="E-mail" class="input input--top" />
     <input id="password" name="pwd" type="password" placeholder="Parola" class="input" />
@@ -227,7 +227,6 @@
           data : {postmail: mail, postpass: pass, postname: nume, postpre: prenume, posttel: telefon },
           success:function(response)
           {
-            alert(response);
             result = response.match(/maildup/);
             if(result != null)
             {

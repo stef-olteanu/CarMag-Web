@@ -33,7 +33,7 @@
         <div id="myOverlay" class="overlaySearch">
           <span class="closebtn" onclick="closeSearch()" title="Close Overlay">X</span>
           <div class="overlay-content">
-            <form action="/action_page.php">
+            <form action="#">
               <input type="text" placeholder="Search.." name="search">
               <button type="submit"><a class="fa fa-search"></a></button>
             </form>
@@ -70,7 +70,7 @@
 	  	<p class="fas fa-mail-bulk">E-mail</p>
 	  	<span style="margin-left: 20px;">carmag2k19@gmail.com</span>
 	  	<br>
-  	</div>	
+  	</div>
   	<hr/>
 
   </div>
@@ -183,7 +183,7 @@
 	  var marker = new google.maps.Marker({position: atm, map: map});
 	  }
     </script>
-    
+
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZGe0AnP3eLwqWsK5P6AM6Et9b3TZCYDM&callback=initMap">
     </script>

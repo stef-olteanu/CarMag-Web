@@ -70,14 +70,14 @@ $servername ="localhost";
         <div id="myOverlay" class="overlaySearch">
           <span class="closebtn" onclick="closeSearch()" title="Close Overlay">X</span>
           <div class="overlay-content">
-            <form action="/action_page.php">
+            <form action="#">
               <input type="text" placeholder="Search.." name="search">
               <button type="submit"><a class="fa fa-search"></a></button>
             </form>
           </div>
         </div>
 
-        
+
     </div>
   </div>
 
@@ -97,7 +97,7 @@ $servername ="localhost";
     <div class="columnPresent">
       <h3 style="margin-left:35%;">Sumar Comanda</h1>
       <p style="margin-left: 5%">Pret:<span style="margin-left:30%;"><?php echo $_SESSION['total'] ?> </span> euro</p>
-      <p style="margin-left: 5%">Cost livrare: <span style="margin-left:22%; color: green;">GRATUIT</span></p> 
+      <p style="margin-left: 5%">Cost livrare: <span style="margin-left:22%; color: green;">GRATUIT</span></p>
       <h3 style="margin-left:35%;">Adresa de livrare</h1>
       <form style="margin-top: 1%;">
         <label id="judetlab" for="judet">Judet*</label>
@@ -130,7 +130,7 @@ $servername ="localhost";
 
 
 <script type="text/javascript">
-  
+
   function validareAdresa(){
       document.getElementById("judetlab").style.color = "black";
       document.getElementById("localitatelab").style.color = "black";
@@ -170,7 +170,7 @@ $servername ="localhost";
         });
       }
 
-     
+
     }
 
 

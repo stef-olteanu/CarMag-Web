@@ -37,7 +37,7 @@ $servername = "localhost";
             <br/>
             Nu ati fost dvs? Semnalati problema la adresa de <a href=\"http://localhost/Pages/contact.php\">Contact</a>!";
 
-            $result=mail("stfn_olteanu@yahoo.com","Recuperare parola",$subject,$headers);
+            $result=mail($mail,"Recuperare parola",$subject,$headers);
             echo("success");
 
         }

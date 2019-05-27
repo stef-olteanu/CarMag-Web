@@ -8,6 +8,8 @@
 	$conn = new mysqli($servername, $dBUsername, $dBPassword, $dBName);
 
 
+	$combustibil = mysqli_real_escape_string($conn,$_POST['postcombustibil']);
+	$stoc = mysqli_real_escape_string($conn,$_POST['poststoc']);
 	$marca = mysqli_real_escape_string($conn, $_POST['postmarca']);
 	$model = mysqli_real_escape_string($conn, $_POST['postmodel']);
 	$pret = mysqli_real_escape_string($conn, $_POST['postpret']);
@@ -24,11 +26,11 @@
 	$poza4 = mysqli_real_escape_string($conn, $_POST['postpoza4']);
 
 
-	$sql = "INSERT into autoturisme(Marca,Model,Pret,An_Fabricatie,Kilometri,Caroserie,Capacitate_Cilindrica, Putere, Cutie_Viteze, Transmisie) values ('$marca','$model','$pret','$an','$km','$caroserie','$capacitate','$putere','$cutie','$transmisie');";
+	$sql = "INSERT into autoturisme(Marca,Model,Pret,An_Fabricatie,Kilometri,Caroserie,Capacitate_Cilindrica, Putere, Cutie_Viteze, Transmisie, Combustibil, Stoc) values ('$marca','$model','$pret','$an','$km','$caroserie','$capacitate','$putere','$cutie','$transmisie','$combustibil','$stoc');";
 
 	$result = mysqli_query($conn,$sql);
 
-	$sql = "SELECT * from autoturisme where 
+	$sql = "SELECT * from autoturisme where
 			Marca='$marca' and
 			Model='$model' and
 			Pret='$pret' and
@@ -38,7 +40,9 @@
 			Capacitate_Cilindrica='$capacitate' and
 			Putere='$putere' and
 			Cutie_Viteze='$cutie' and
-			Transmisie='$transmisie';";
+			Transmisie='$transmisie' and
+			Combustibil='$combustibil' and
+			Stoc='$stoc';";
 	$result = mysqli_query($conn,$sql);
 	$row = mysqli_fetch_assoc($result);
 	$id = $row['ID'];

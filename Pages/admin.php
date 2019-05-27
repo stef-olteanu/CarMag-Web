@@ -37,7 +37,7 @@
         <div id="myOverlay" class="overlaySearch">
           <span class="closebtn" onclick="closeSearch()" title="Close Overlay">X</span>
           <div class="overlay-content">
-            <form action="/action_page.php">
+            <form action="#">
               <input type="text" placeholder="Search.." name="search">
               <button type="submit"><a class="fa fa-search"></a></button>
             </form>
@@ -69,6 +69,8 @@
         <input type="text" id="an" name="an">
         <label id="kmlab" for="km">Kilometri*</label>
         <input type="text" id="km" name="km" >
+        <label id="combustibillab" for="combustibil">Combustibil*</label>
+        <input type="text" id="combustibil" name="combustibil" >
         <label id="caroserielab" for="caroserie">Caroserie*</label>
         <input type="text" id="caroserie" name="caroserie" >
         <label id="capacitatelab" for="capacitate">Capacitate Cilindrica*</label>
@@ -79,6 +81,8 @@
         <input type="text" id="cutie" name="cutie" >
         <label id="transmisielab" for="trasnmisie">Transmisie*</label>
         <input type="text" id="transmisie" name="transmisie" >
+        <label id="stoclab" for="stoc">Stoc</label>
+        <input type="text" id="stoc" name="stoc" >
         <label id="poza1lab" for="poza1">Poza generala*</label>
         <input type="file" id="poza1" name="poza1" >
         <label id="poza2lab" for="poza2">Poza spate*</label>
@@ -101,6 +105,8 @@
         document.getElementById("pretlab").style.color = "black";
         document.getElementById("anlab").style.color = "black";
         document.getElementById("kmlab").style.color = "black";
+        document.getElementById("combustibillab").style.color = "black";
+        document.getElementById("stoclab").style.color = "black";
         document.getElementById("caroserielab").style.color = "black";
          document.getElementById("capacitatelab").style.color = "black";
         document.getElementById("puterelab").style.color = "black";
@@ -123,12 +129,29 @@
       var putere = document.getElementById("putere").value;
       var cutie = document.getElementById("cutie").value;
       var transmisie = document.getElementById("transmisie").value;
+      var combustibil = document.getElementById("combustibil").value;
+      var stoc = document.getElementById("stoc").value;
       var poza1 = document.getElementById("poza1").value;
       var poza2 = document.getElementById("poza2").value;
       var poza3 = document.getElementById("poza3").value;
       var poza4 = document.getElementById("poza4").value;
 
       err=0;
+      if(combustibil === "")
+      {
+        document.getElementById("combustibillab").style.color = "red";
+        document.getElementById("combustibillab").title="Introduceti combustibilul masinii";
+        err=1;
+      }
+
+      if(stoc === "")
+      {
+        document.getElementById("stoclab").style.color = "red";
+        document.getElementById("stoclab").title="Introduceti stocul masinii";
+        err=1;
+      }
+
+
       if(marca === "")
       {
         document.getElementById("marcalab").style.color = "red";
@@ -251,11 +274,13 @@
         $.ajax({
           type: 'POST',
           url: '../Php/addauto.php',
-          data : {postmarca: marca, postmodel: model,postpret: pret ,postan: an, postkm: km,postcaroserie: caroserie,postcapacitate: capacitate, postputere: putere,postcutie: cutie, posttransmisie: transmisie, postpoza1: poza1,postpoza2: poza2,postpoza3: poza3,postpoza4: poza4},
+          data : {postcombustibil:combustibil,poststoc: stoc,postmarca: marca, postmodel: model,postpret: pret ,postan: an, postkm: km,postcaroserie: caroserie,postcapacitate: capacitate, postputere: putere,postcutie: cutie, posttransmisie: transmisie, postpoza1: poza1,postpoza2: poza2,postpoza3: poza3,postpoza4: poza4},
           success:function(response)
           {
             if(response == "success")
             {
+              document.getElementById("combustibillab").style.color = "green";
+              document.getElementById("stoclab").style.color = "green";
               document.getElementById("marcalab").style.color = "green";
               document.getElementById("modellab").style.color = "green";
               document.getElementById("pretlab").style.color = "green";

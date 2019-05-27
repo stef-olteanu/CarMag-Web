@@ -41,7 +41,7 @@
         <div id="myOverlay" class="overlaySearch">
           <span class="closebtn" onclick="closeSearch()" title="Close Overlay">X</span>
           <div class="overlay-content">
-            <form action="/action_page.php">
+            <form action="#">
               <input type="text" placeholder="Search.." name="search">
               <button type="submit"><i class="fa fa-search"></i></button>
             </form>
@@ -98,7 +98,7 @@
 
           echo '<p class="title">'.$row['Marca'].' '.$row['Model'].'</p>
           <div class="overlay"></div>
-          <div class="button"><a id='.$row['ID_Auto'].' onclick="gotoProd(this.id)">Vezi</a></div>
+          <div style="cursor:pointer;" class="button"><a id='.$row['ID_Auto'].' onclick="gotoProd(this.id)">Vezi</a></div>
           </div>';
 
 
